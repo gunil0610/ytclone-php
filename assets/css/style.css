@@ -9,6 +9,10 @@ body {
   padding: 0;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 /* .hidden {
   display: none !important;
 } */
@@ -33,13 +37,19 @@ body {
   align-items: center;
 }
 
-#mastHeadContainer button:not(.searchButton) {
+#mastHeadContainer button:not(.searchButton),
+#mastHeadContainer .rightIcons img {
   cursor: pointer;
   width: 40px;
   height: 40px;
   padding: 8px;
   box-sizing: border-box;
   border: none;
+  background-color: transparent;
+}
+
+#mastHeadContainer .rightIcons {
+  height: 100%;
 }
 
 #mastHeadContainer button img {
